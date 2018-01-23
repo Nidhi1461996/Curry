@@ -7,6 +7,8 @@ describe('Valid inputs', () => {
     expect(check(1)(2)).toBe(3);
   });
 
-  
+  test('negative numbers as arguments', () =>{
+    expect(check(-1)(2)).toBe(1);
+  });
 
 });
