@@ -2,8 +2,7 @@ var total = 0;
 function longDelay(a) {
   if (a === undefined) {
     var result = total;
-    total = null;
-
+    total=null;
     return result;
   } else {
     total = total + a;
@@ -11,4 +10,4 @@ function longDelay(a) {
   }
 }
 
-console.log(longDelay()());
+module.exports=longDelay;
